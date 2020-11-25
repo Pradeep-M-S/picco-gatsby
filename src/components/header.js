@@ -18,7 +18,7 @@ const Header = () => {
       </NavMenu>
       <NavBtn>
         <Button primary round big to="/trips">
-          Book a Cab
+          Book a Taxi
         </Button>
       </NavBtn>
     </NavContainer>

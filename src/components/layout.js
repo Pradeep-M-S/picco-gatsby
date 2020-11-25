@@ -8,6 +8,9 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <Header />
+      <Header />
+      <Header />
+      <Header />
       <main>{children}</main>
     </>
   )
