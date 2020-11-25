@@ -6,12 +6,18 @@ import Trips from "../components/Trips"
 import Testimonials from "../components/Testimonials"
 import Stats from "../components/Stats"
 import Footer from "../components/Footer"
+import CountStats from "../components/CountStats"
+import Offers from "../components/Offers"
+import Fleet from "../components/Fleet"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Offers heading="Great offers for you" />
+    <Fleet heading="Picco's Fleet" />
+    <CountStats />
+    <Trips heading="Popular Destinations" />
     <Hero />
-    <Trips heading="Our Favourite Destinations" />
     <Testimonials />
     <Stats />
     <Footer />

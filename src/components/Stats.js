@@ -1,53 +1,57 @@
 import React from "react"
 import styled from "styled-components"
-import { GiEarthAmerica } from "react-icons/gi"
-import { MdAirplanemodeActive, MdTimer } from "react-icons/md"
-import { FaMoneyCheck } from "react-icons/fa"
+import { FaRupeeSign } from "react-icons/fa"
+import { FcOnlineSupport } from "react-icons/fc"
+import { GiThreeFriends } from "react-icons/gi"
+import { BiTaxi } from "react-icons/bi"
 
 const StatsData = [
   {
     icon: (
-      <GiEarthAmerica
+      <FaRupeeSign
         css={`
           color: #047bf1;
         `}
       />
     ),
-    title: "Over 100 Destinations",
-    desc: "Travel to 100 unique places",
+    title: "Best Price",
+    desc:
+      " We reward you with lower rates the longer you rent a car from us and at best price.",
   },
   {
     icon: (
-      <MdAirplanemodeActive
+      <FcOnlineSupport
         css={`
           color: #f3a82e;
         `}
       />
     ),
-    title: "1 Millions Trips made",
-    desc: "Over 1 Million Trips Completed last year",
+    title: "24*7 Support",
+    desc:
+      " An immediate free transfer service to your residence and replacement car is available.",
   },
   {
     icon: (
-      <MdTimer
+      <GiThreeFriends
         css={`
           color: #f34f2e;
         `}
       />
     ),
-    title: "Fastest Support",
-    desc: "Access our support Team 24x7",
+    title: "Friendly Drivers",
+    desc:
+      "Our friendly and knowledgeable drivers will take care of you with the complete journey.",
   },
   {
     icon: (
-      <FaMoneyCheck
+      <BiTaxi
         css={`
           color: #3af576;
         `}
       />
     ),
-    title: "Best Deals",
-    desc: "We Offer the best price",
+    title: "Premium Cabs",
+    desc: "All our cars and brand new and regularly audited cars.",
   },
 ]
 

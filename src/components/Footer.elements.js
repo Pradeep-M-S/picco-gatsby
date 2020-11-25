@@ -3,23 +3,14 @@ import { FaMagento } from "react-icons/fa"
 import { Link } from "gatsby"
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  min-height: 60vh;
+  background-color: #f8f9fa;
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
-
-export const FooterSubscription = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 24px;
-  padding: 24px;
-  color: #fff;
+  color: black;
 `
 
 export const FooterSubHeading = styled.p`
@@ -84,9 +75,23 @@ export const FooterLinkItems = styled.div`
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 250px;
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
+  @media screen and (max-width: 420px) {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+`
+export const FooterCityItems = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 16px;
+  text-align: left;
+  width: 250px;
+  box-sizing: border-box;
+  color: #000;
   @media screen and (max-width: 420px) {
     margin: 0;
     padding: 10px;
@@ -99,7 +104,7 @@ export const FooterLinkTitle = styled.h2`
 `
 
 export const FooterLink = styled(Link)`
-  color: #fff;
+  color: #000;
   text-decoration: none;
   margin-bottom: 0.5rem;
   &:hover {
@@ -126,7 +131,7 @@ export const SocialMediaWrap = styled.div`
 `
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
+  color: #000;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -141,7 +146,7 @@ export const SocialIcon = styled(FaMagento)`
 `
 
 export const WebsiteRights = styled.small`
-  color: #fff;
+  color: #000;
   margin-bottom: 16px;
 `
 
@@ -153,6 +158,6 @@ export const SocialIcons = styled.div`
 `
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #000;
   font-size: 24px;
 `

@@ -6,60 +6,96 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa"
+import { BiTaxi } from "react-icons/bi"
+
 import {
   FooterContainer,
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
+  FooterCityItems,
   FooterLinkTitle,
   FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
-  SocialIcon,
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
 } from "./Footer.elements"
 
+const cityData = [
+  "Madurai",
+  "Chennai",
+  "Bangalore",
+  "Ramnad",
+  "Pondicherry",
+  "Tirunelveli",
+  "Trichy",
+  "Kerala",
+  "Coimbatore",
+  "Karnataka",
+  "All Over South India",
+]
+
+const servicesData = [
+  "Local Booking",
+  "Rental Cabs",
+  "Outstation Rides",
+  "Offers",
+  "Gift Vouchers",
+  "Hill stations",
+]
 function Footer() {
   return (
     <FooterContainer>
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems>
-            <FooterLinkTitle>About Us</FooterLinkTitle>
-            <FooterLink to="/sign-up">How it works</FooterLink>
-            <FooterLink to="/">Testimonials</FooterLink>
-            <FooterLink to="/">Careers</FooterLink>
-            <FooterLink to="/">Investors</FooterLink>
-            <FooterLink to="/">Terms of Service</FooterLink>
+            <FooterLinkTitle>Our best routes</FooterLinkTitle>
+            <FooterCityItems>
+              {cityData.map((city, index) => {
+                return <FooterLink key={index}>{city}</FooterLink>
+              })}
+            </FooterCityItems>
+          </FooterLinkItems>{" "}
+          <FooterLinkItems>
+            <FooterLinkTitle>Our Services</FooterLinkTitle>
+            <FooterCityItems>
+              {servicesData.map((service, index) => {
+                return <FooterLink key={index}>{service}</FooterLink>
+              })}
+            </FooterCityItems>
           </FooterLinkItems>
           <FooterLinkItems>
-            <FooterLinkTitle>Contact Us</FooterLinkTitle>
-            <FooterLink to="/">Contact</FooterLink>
-            <FooterLink to="/">Support</FooterLink>
-            <FooterLink to="/">Destinations</FooterLink>
-            <FooterLink to="/">Sponsorships</FooterLink>
+            <FooterLinkTitle>Address</FooterLinkTitle>
+            <FooterLink to="/">No.187 Palace Road</FooterLink>
+            <FooterLink to="/"> Madurai-625001 Tamilnadu India</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
-        <FooterLinksWrapper>
+        {/* <FooterLinksWrapper>
           <FooterLinkItems>
-            <FooterLinkTitle>Social Media</FooterLinkTitle>
-            <FooterLink to="/">Instagram</FooterLink>
-            <FooterLink to="/">Facebook</FooterLink>
-            <FooterLink to="/">Youtube</FooterLink>
-            <FooterLink to="/">Twitter</FooterLink>
+            <FooterLinkTitle>Contact </FooterLinkTitle>
+            <FooterLink to="/">+91 915 915 7070</FooterLink>
+            <FooterLink to="/">piccocabs@gmail.com</FooterLink>
+            <FooterLink to="/">Terms & Conditions</FooterLink>
           </FooterLinkItems>
-        </FooterLinksWrapper>
+        </FooterLinksWrapper> */}
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to="/">
-            <SocialIcon />
-            EXPLORIX
+            <BiTaxi
+              css={`
+                margin-right: 10px;
+              `}
+            />
+            PICCO
           </SocialLogo>
-          <WebsiteRights>EXPLORIX © 2020</WebsiteRights>
+          <WebsiteRights>
+            Picco Cabs © 2020 || Powered By NoNo Design
+          </WebsiteRights>{" "}
+          <WebsiteRights>Terms & Conditions Applied </WebsiteRights>
           <SocialIcons>
             <SocialIconLink href="/" target="_blank" aria-label="Facebook">
               <FaFacebook />

@@ -1,26 +1,26 @@
 [
   {
     "img": "../assets/images/travel-1.jpg",
-    "alt": "Scotland",
-    "name": "Scotland",
+    "alt": "Chennai",
+    "name": "Chennai",
     "button": "View Destination"
   },
   {
     "img": "../assets/images/travel-2.jpg",
-    "alt": "New Zealand",
-    "name": "New Zealand",
+    "alt": "Coimbatore",
+    "name": "Coimbatore",
     "button": "View Destination"
   },
   {
     "img": "../assets/images/travel-3.jpg",
-    "alt": "Turkey",
-    "name": "Turkey",
+    "alt": "Ramanathapuram",
+    "name": "Ramanathapuram",
     "button": "View Destination"
   },
   {
     "img": "../assets/images/travel-4.jpg",
-    "alt": "Morocco",
-    "name": "Morocco",
+    "alt": "Pondichery",
+    "name": "Pondichery",
     "button": "View Destination"
   }
 ]

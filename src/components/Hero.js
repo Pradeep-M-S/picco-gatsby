@@ -11,10 +11,10 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <HeroH1>Unreal Destinations</HeroH1>
-          <HeroP>Out of the world</HeroP>
+          <HeroH1>Feel the Comfort</HeroH1>
+          <HeroP>Your Destination is our Goal</HeroP>
           <Button round big to="/trips">
-            Travel Now
+            Explore Offers
           </Button>
         </HeroItems>
       </HeroContent>
@@ -32,12 +32,11 @@ const HeroContainer = styled.div`
   align-items: center;
   color: #fff;
   justify-content: center;
-  margin-top: -80px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 418vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -53,7 +52,7 @@ const HeroContainer = styled.div`
 
 const HeroBg = styled.div`
   position: absolute;
-  top: 0;
+  top: 418vh;
   left: 0;
   right: 0;
   bottom: 0;

@@ -1,0 +1,20 @@
+[
+  {
+    "img": "../assets/images/car-1.png",
+    "alt": "Picco Mini",
+    "name": "Picco Mini",
+    "offerdesc": "Peppy Hatchbacks for quick and pocket friendly rides."
+  },
+  {
+    "img": "../assets/images/car-2.png",
+    "alt": "Picco Sedan",
+    "name": "Picco Sedan",
+    "offerdesc": "Comfortable Cars for Family & Touring with adequate boot space and ample entertainment."
+  },
+  {
+    "img": "../assets/images/car-3.png",
+    "alt": "Picco SUV",
+    "name": "Picco SUV",
+    "offerdesc": "Big Space , Big Trips with more people and more things."
+  }
+]

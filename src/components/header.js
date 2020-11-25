@@ -7,7 +7,7 @@ import { Button } from "./Button"
 const Header = () => {
   return (
     <Nav>
-      <Navlink to="/">EXPLORIX</Navlink>
+      <Navlink to="/">PICCO CABS</Navlink>
       <Bars />
       <NavMenu>
         {menudata.map((item, index) => (
@@ -18,7 +18,7 @@ const Header = () => {
       </NavMenu>
       <NavBtn>
         <Button primary round big to="/trips">
-          Book a flight
+          Book a Cab
         </Button>
       </NavBtn>
     </Nav>
@@ -28,21 +28,27 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  height: 80px;
-  border-radius: 0 0 30px 30px;
+  height: 100px;
+
+  border-radius: 0 0 50px 50px;
   justify-content: space-between;
   display: flex;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
-  position: relative;
-  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
 `
 
 const Navlink = styled(Link)`
-  color: white;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-size: 1.2rem;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;

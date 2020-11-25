@@ -1,0 +1,23 @@
+[
+  {
+    "img": "../assets/images/offer-1.jpg",
+    "alt": "Chennai",
+    "name": "Madurai to Kodaikanal",
+    "offerprice": "Rs.3999/- only",
+    "offerdesc": "Now enjoy Kodaikanal trip (2D/1N) with travel food accommodation sightseeing and activities. Min 2pax"
+  },
+  {
+    "img": "../assets/images/offer-2.jpg",
+    "alt": "Coimbatore",
+    "name": "Madurai to Chennai",
+    "offerprice": "Rs.6999/- only",
+    "offerdesc": "Madurai - Chennai & Chennai - Madurai Oneway Drop. Travel from your doorstep to Doorstep in fully sanitized private Sedans with unlimited kms"
+  },
+  {
+    "img": "../assets/images/offer-3.jpg",
+    "alt": "Bangalore",
+    "name": "Madurai to Bangalore",
+    "offerprice": "Rs.7999/- only",
+    "offerdesc": "Madurai - Bangalore & Bangalore - Madurai One way Drop. Travel from your doorstep to Doorstep in fully sanitized private Sedans with unlimited kms"
+  }
+]
