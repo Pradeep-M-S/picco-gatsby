@@ -27,7 +27,7 @@ const Header = () => {
 
 export default Header
 
-const NavContainer = styled.nav`
+const NavContainer = styled.div`
   height: 100px;
   border-radius: 0 0 50px 50px;
   justify-content: space-between;
@@ -38,7 +38,7 @@ const NavContainer = styled.nav`
   top: 0;
   right: 0;
   left: 0;
-  background: white;
+  background: red;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
