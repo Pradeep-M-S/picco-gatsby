@@ -6,7 +6,7 @@ import { menudata } from "../data/menudata"
 import { Button } from "./Button"
 const Header = () => {
   return (
-    <Nav>
+    <NavContainer>
       <Navlink to="/">PICCO CABS</Navlink>
       <Bars />
       <NavMenu>
@@ -21,15 +21,14 @@ const Header = () => {
           Book a Cab
         </Button>
       </NavBtn>
-    </Nav>
+    </NavContainer>
   )
 }
 
 export default Header
 
-const Nav = styled.nav`
+const NavContainer = styled.nav`
   height: 100px;
-
   border-radius: 0 0 50px 50px;
   justify-content: space-between;
   display: flex;
@@ -39,9 +38,13 @@ const Nav = styled.nav`
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: white;
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 `
 
 const Navlink = styled(Link)`

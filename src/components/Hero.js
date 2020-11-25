@@ -31,12 +31,13 @@ const HeroContainer = styled.div`
   padding: 0 1rem;
   align-items: center;
   color: #fff;
+  position: relative;
   justify-content: center;
 
   &::before {
     content: "";
     position: absolute;
-    top: 418vh;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -52,7 +53,7 @@ const HeroContainer = styled.div`
 
 const HeroBg = styled.div`
   position: absolute;
-  top: 418vh;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
