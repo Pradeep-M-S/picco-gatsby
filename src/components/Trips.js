@@ -70,6 +70,7 @@ const ProductsHeading = styled.div`
   font-size: clamp(1.5rem, 5vw, 3rem);
   text-align: center;
   margin: 5rem 0;
+  font-weight: 600;
   color: #000;
 `
 const ProductWrapper = styled.div`

@@ -100,6 +100,9 @@ const AllCountContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
   }
+  @media screen and (max-width: 328px) {
+    gap: 20px;
+  }
 `
 const IndividualCounter = styled.div`
   display: flex;

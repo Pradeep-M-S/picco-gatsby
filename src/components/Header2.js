@@ -147,11 +147,12 @@ const NavMobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
+  font-weight: 500;
   justify-content: space-evenly;
   align-items: center;
   height: 200px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
   transition: all 0.5s ease;
@@ -159,9 +160,11 @@ const NavMobileMenu = styled.div`
   @keyframes mymove {
     from {
       opacity: 0;
+      bottom: -100px;
     }
     to {
       opacity: 1;
+      bottom: 0;
     }
   }
 `

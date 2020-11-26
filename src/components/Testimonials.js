@@ -3,29 +3,7 @@ import Img from "gatsby-image"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { FaRegLightbulb, FaAirFreshener } from "react-icons/fa"
 import styled from "styled-components"
-import { graphql, useStaticQuery } from "gatsby"
 const Testimonials = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          ext: { regex: "/(jpg)|(png)|(jpeg)/" }
-          name: { in: ["guy", "girl"] }
-        }
-      ) {
-        edges {
-          node {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <TestimonialsContainer>
       <TopLine>Testimonials</TopLine>
@@ -119,12 +97,6 @@ const Testimonials = () => {
             </p>
           </Testimonial>
         </ColumnOne>
-        <ColumnTwo>
-          {data.allFile.edges.map((image, key) => (
-            <Images key={key} fluid={image.node.childImageSharp.fluid} />
-          ))}
-          <Images />
-        </ColumnTwo>
       </ContentWrapper>
     </TestimonialsContainer>
   )
@@ -150,17 +122,14 @@ const Description = styled.div`
   text-align: start;
   padding-left: 2rem;
   margin-bottom: 4rem;
-  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 auto;
   font-weight: bold;
 `
 const ContentWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 0 2rem;
-
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 `
 
 const Testimonial = styled.div`
@@ -180,6 +149,11 @@ const Testimonial = styled.div`
 const ColumnOne = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 320px) {
+    grid-template-columns: 1fr;
+  }
 `
 const ColumnTwo = styled.div`
   display: grid;
