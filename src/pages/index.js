@@ -11,28 +11,28 @@ import CountStats from "../components/CountStats"
 import Offers from "../components/Offers"
 import Fleet from "../components/Fleet"
 import Blah from "../components/Blah"
+import Hero1 from "../components/Hero1"
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" /> <Blah />
+    <SEO title="Picco Cabs" />
+    <Blah />
+    <Hero1 id="app" />
     <Fade bottom>
       <Offers heading="Great offers for you" />
     </Fade>
     <Fade bottom>
       <Fleet heading="Picco's Fleet" />
-    </Fade>{" "}
+    </Fade>
     <Fade bottom>
       <CountStats />{" "}
     </Fade>
     <Fade left>
-      {" "}
       <Trips heading="Popular Destinations" />
     </Fade>{" "}
     <Fade right>
-      {" "}
       <Testimonials />
     </Fade>
     <Fade left>
-      {" "}
       <Stats />
     </Fade>{" "}
     <Hero />
@@ -41,3 +41,5 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+// <script src="https://smtpjs.com/v3/smtp.js"></script>
+//

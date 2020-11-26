@@ -1,0 +1,522 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201126.230724.18748.0.001.json",
+    "dumpEventTime": "2020-11-26T23:07:24Z",
+    "dumpEventTimeStamp": "1606412244624",
+    "processId": 18748,
+    "threadId": null,
+    "cwd": "D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\.cache\\tmp-15888-9vP6fexSK77I"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 24824718,
+        "nice": 0,
+        "sys": 17760250,
+        "idle": 130652093,
+        "irq": 2995062
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 20199343,
+        "nice": 0,
+        "sys": 8570953,
+        "idle": 144466156,
+        "irq": 377781
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 31892468,
+        "nice": 0,
+        "sys": 14466328,
+        "idle": 126877656,
+        "irq": 545359
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 24602375,
+        "nice": 0,
+        "sys": 10313562,
+        "idle": 138320515,
+        "irq": 390515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 29044531,
+        "nice": 0,
+        "sys": 13106750,
+        "idle": 131085171,
+        "irq": 514187
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 22764515,
+        "nice": 0,
+        "sys": 10376250,
+        "idle": 140095687,
+        "irq": 436187
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 29172609,
+        "nice": 0,
+        "sys": 12149250,
+        "idle": 131914578,
+        "irq": 476296
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 26373125,
+        "nice": 0,
+        "sys": 12900609,
+        "idle": 133962703,
+        "irq": 374484
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0a",
+        "address": "fe80::50da:32fb:f8ba:a379",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0a",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Local Area Connection* 2",
+        "internal": false,
+        "mac": "80:91:33:f2:ef:7d",
+        "address": "192.168.137.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Local Area Connection* 2",
+        "internal": false,
+        "mac": "80:91:33:f2:ef:7d",
+        "address": "192.168.173.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "80:91:33:f2:ef:7d",
+        "address": "192.168.43.162",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "LAPTOP-3QTJDCSG"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7997a2449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x00007ff7997a69a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x00007ff7997a5828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x00007ff7998dd8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00007ff79a0f9bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff79a0e1c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff799fae1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff799fb9420",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff799fb5f44",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff799fab743",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff799fa9db4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff799fd18fb",
+      "symbol": "v8::internal::Factory::NewRawOneByteString+91"
+    },
+    {
+      "pc": "0x00007ff799df390a",
+      "symbol": "v8::internal::String::SlowFlatten+442"
+    },
+    {
+      "pc": "0x00007ff799cbbe5f",
+      "symbol": "unibrow::Utf8::EncodeOneByte+687"
+    },
+    {
+      "pc": "0x00007ff799df1d5e",
+      "symbol": "v8::Name::GetIdentityHash+558"
+    },
+    {
+      "pc": "0x00007ff799cf6dea",
+      "symbol": "v8::internal::StubCache::value_reference+11418"
+    },
+    {
+      "pc": "0x00007ff79a546c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x00007ff79a531d5b",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+460891"
+    },
+    {
+      "pc": "0x0000004f99f2fd6a",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2153639936,
+    "totalCommittedMemory": 2153639936,
+    "usedMemory": 2135647488,
+    "availableMemory": 49536488,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2094912,
+        "used": 328360,
+        "available": 1766552
+      },
+      "old_space": {
+        "memorySize": 1509044224,
+        "committedMemory": 1509044224,
+        "capacity": 1502806296,
+        "used": 1501306632,
+        "available": 1499664
+      },
+      "code_space": {
+        "memorySize": 5148672,
+        "committedMemory": 5148672,
+        "capacity": 4344672,
+        "used": 4344672,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 10752000,
+        "committedMemory": 10752000,
+        "capacity": 5810080,
+        "used": 5810080,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 623292416,
+        "committedMemory": 623292416,
+        "capacity": 622970792,
+        "used": 622970792,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 946176,
+        "committedMemory": 946176,
+        "capacity": 854144,
+        "used": 854144,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094912,
+        "used": 0,
+        "available": 2094912
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1314.31,
+    "kernelCpuSeconds": 192.5,
+    "cpuConsumptionPercent": 31.4837,
+    "maxRss": 2293567488,
+    "pageFaults": {
+      "IORequired": 13627886,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 158240,
+      "writes": 14280
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Pradeep\\AppData\\Roaming",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132331533404172327",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-3QTJDCSG",
+    "COMSPEC": "C:\\windows\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GATSBY_BUILD_STAGE": "develop",
+    "gatsby_executing_command": "develop",
+    "GATSBY_LOGGER": "ink",
+    "gatsby_log_level": "normal",
+    "GIT_ASKPASS": "c:\\Program Files\\VSCode-win32-x64-1.45.1\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOME": "C:\\Users\\Pradeep",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Pradeep",
+    "INTEL_DEV_REDIST": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Pradeep\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-3QTJDCSG",
+    "MIC_LD_LIBRARY_PATH": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\mic",
+    "MSYSTEM": "MINGW64",
+    "NODE_ENV": "development",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\Pradeep\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Pradeep\\OneDrive",
+    "OnlineServices": "Online Services",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Pradeep\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts;C:\\Python38;);C:\\Users\\Pradeep\\AppData\\Local\\Programs\\Python;C:\\Users\\Pradeep\\AppData\\Local\\Programs\\Python\\Scripts;C:\\Windows\\System32;C:\\src\\flutter\\bin;C:\\MinGw\\bin;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Java\\jdk-14.0.1\\bin;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MongoDB\\Server\\4.4\\bin;C:\\windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\MongoDB\\mongodb-database-tools-windows-x86_64-100.1.1\\bin;C:\\Users\\Pradeep\\AppData\\Local\\Programs\\Python\\Python39\\Scripts;C:\\Users\\Pradeep\\AppData\\Local\\Programs\\Python\\Python39;C:\\src\\flutter\\flutter\\bin;C:\\Users\\Pradeep\\AppData\\Roaming\\npm;C:\\Users\\Pradeep\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Pradeep\\AppData\\Local\\Yarn\\bin;C:\\Program Files\\heroku\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Program Files\\VSCode-win32-x64-1.45.1\\bin;C:\\MinGW\\bin;C:\\Users\\Pradeep\\AppData\\Local\\atom\\bin;C:\\Users\\Pradeep\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+    "platformcode": "KV",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0c",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Users\\Pradeep\\Documents\\WindowsPowerShell\\Modules;C:\\Users\\Pradeep\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\platform\\PowerShell",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "D:/Pjcts/nono-design/picco/final-gatsby-pjct/gatsby-travel",
+    "PYTHON_HOME": "C:\\Users\\Pradeep\\AppData\\Local\\Programs\\Python",
+    "RegionCode": "APJ",
+    "SHLVL": "2",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\windows",
+    "TEMP": "C:\\Users\\Pradeep\\AppData\\Local\\Temp",
+    "TERM": "xterm-256color",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.45.1",
+    "TMP": "C:\\Users\\Pradeep\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-3QTJDCSG",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-3QTJDCSG",
+    "USERNAME": "Pradeep",
+    "USERPROFILE": "C:\\Users\\Pradeep",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "VIPSHOME": "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Program Files\\VSCode-win32-x64-1.45.1\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Program Files\\VSCode-win32-x64-1.45.1\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-7eec93cd21-sock",
+    "WINDIR": "C:\\windows",
+    "_": "C:/Program Files/nodejs/node",
+    "__COMPAT_LAYER": "Installer"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\windows\\SYSTEM32\\ntdll.dll",
+    "C:\\windows\\System32\\KERNEL32.DLL",
+    "C:\\windows\\System32\\KERNELBASE.dll",
+    "C:\\windows\\SYSTEM32\\apphelp.dll",
+    "C:\\windows\\System32\\WS2_32.dll",
+    "C:\\windows\\System32\\RPCRT4.dll",
+    "C:\\windows\\System32\\PSAPI.DLL",
+    "C:\\windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\windows\\System32\\ucrtbase.dll",
+    "C:\\windows\\System32\\ADVAPI32.dll",
+    "C:\\windows\\System32\\msvcrt.dll",
+    "C:\\windows\\System32\\sechost.dll",
+    "C:\\windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\windows\\System32\\USER32.dll",
+    "C:\\windows\\SYSTEM32\\USERENV.dll",
+    "C:\\windows\\System32\\win32u.dll",
+    "C:\\windows\\System32\\profapi.dll",
+    "C:\\windows\\System32\\GDI32.dll",
+    "C:\\windows\\System32\\gdi32full.dll",
+    "C:\\windows\\System32\\msvcp_win.dll",
+    "C:\\windows\\System32\\CRYPT32.dll",
+    "C:\\windows\\System32\\MSASN1.dll",
+    "C:\\windows\\System32\\bcrypt.dll",
+    "C:\\windows\\SYSTEM32\\WINMM.dll",
+    "C:\\windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\windows\\System32\\cfgmgr32.dll",
+    "C:\\windows\\System32\\bcryptPrimitives.dll",
+    "C:\\windows\\System32\\IMM32.DLL",
+    "C:\\windows\\System32\\powrprof.dll",
+    "C:\\windows\\System32\\UMPDC.dll",
+    "C:\\windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\windows\\system32\\uxtheme.dll",
+    "C:\\windows\\System32\\combase.dll",
+    "C:\\windows\\system32\\mswsock.dll",
+    "C:\\windows\\System32\\kernel.appcore.dll",
+    "C:\\windows\\System32\\NSI.dll",
+    "C:\\windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\windows\\system32\\napinsp.dll",
+    "C:\\windows\\system32\\pnrpnsp.dll",
+    "C:\\windows\\System32\\winrnr.dll",
+    "C:\\windows\\system32\\NLAapi.dll",
+    "C:\\windows\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\windows\\System32\\fwpuclnt.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\sharp.node",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libglib-2.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libvips-42.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libvips-cpp.dll",
+    "C:\\windows\\System32\\ole32.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libintl-8.dll",
+    "C:\\windows\\System32\\SHELL32.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libcairo-2.dll",
+    "C:\\windows\\System32\\shcore.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libexif-12.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libexpat-1.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libfontconfig-1.dll",
+    "C:\\windows\\System32\\windows.storage.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgif-7.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgio-2.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgmodule-2.0-0.dll",
+    "C:\\windows\\System32\\shlwapi.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgobject-2.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libjpeg-62.dll",
+    "C:\\windows\\System32\\cryptsp.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\liblcms2-2.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\liborc-0.4-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libpangoft2-1.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libpango-1.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libpng16-16.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libwebpdemux-2.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libwebp-7.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libwebpmux-3.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libz1.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libiconv-2.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libfreetype-6.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libpixman-1-0.dll",
+    "C:\\windows\\SYSTEM32\\MSIMG32.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libffi-7.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libfribidi-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libharfbuzz.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgsf-1-114.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libtiff-5.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\librsvg-2-2.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgcc_s_seh-1.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libgdk_pixbuf-2.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libxml2-2.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libpangocairo-1.0-0.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\sharp\\build\\Release\\libpangowin32-1.0-0.dll",
+    "C:\\windows\\SYSTEM32\\ntmarta.dll",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\bufferutil\\prebuilds\\win32-x64\\node.napi.node",
+    "\\\\?\\D:\\Pjcts\\nono-design\\picco\\final-gatsby-pjct\\gatsby-travel\\node_modules\\utf-8-validate\\prebuilds\\win32-x64\\node.napi.node"
+  ]
+}

@@ -20,7 +20,7 @@ const Header2 = () => {
           easing="ease"
           color="#000"
           direction="right"
-          size={30}
+          size={29}
           distance="md"
           duration={0.4}
           onToggle={toggled => {
@@ -65,7 +65,8 @@ const NavContainer = styled.div`
   justify-content: space-between;
   display: flex;
   padding: 0.5rem calc((100vw - 1300px) / 2);
-  z-index: 100;
+  z-index: 100454545100000000000000;
+
   position: fixed;
   top: 0;
   right: 0;
