@@ -16,7 +16,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Picco Cabs" />
     <Blah />
-    <Hero1 id="app" />
+    <Hero1 />
     <Fade bottom>
       <Offers heading="Great offers for you" />
     </Fade>
@@ -41,5 +41,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-// <script src="https://smtpjs.com/v3/smtp.js"></script>
-//

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 const Fleet = ({ heading }) => {
@@ -48,8 +49,12 @@ const Fleet = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <ProductsHeading>{heading}</ProductsHeading>
-        <ProductWrapper>{getOffers(data)}</ProductWrapper>
+        <Fade bottom>
+          <ProductsHeading>{heading}</ProductsHeading>
+        </Fade>
+        <Fade right>
+          <ProductWrapper>{getOffers(data)}</ProductWrapper>
+        </Fade>
       </ProductsContainer>
     </div>
   )

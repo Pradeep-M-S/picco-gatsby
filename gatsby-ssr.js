@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+
+import React from "react"
+export const onRenderBody = (
+  { setHeadComponents, setPostBodyComponents },
+  pluginOptions
+) => {
+  setPostBodyComponents([<script src="https://smtpjs.com/v3/smtp.js"></script>])
+}
