@@ -52,6 +52,7 @@ const SlideShow = () => {
           fluid={images[index].node.childImageSharp.fluid}
           alt={images[index].node.base.split(".")[0]}
           fadeIn="true"
+          placeholderStyle={{ visibility: "hidden" }}
         />
       </SlidesContainer>
     </>
