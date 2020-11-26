@@ -77,13 +77,13 @@ export default CountStats
 const CountStatsContainer = styled.div`
   padding: 2rem;
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-rows: 100px 80px 1fr;
   text-align: center;
-  min-height: 80vh;
+  min-height: 50vh;
 `
 
 const Heading = styled.h1`
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   margin: 1rem 0;
   color: #000;
 `

@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Button } from "./Button"
-import { AiFillCaretRight } from "react-icons/ai"
 const Offers = ({ heading }) => {
   const data = useStaticQuery(graphql`
     query OffersQuery {
@@ -152,8 +150,4 @@ const OfferDescription = styled.p`
   @media screen and (max-width: 868px) {
     margin-left: -25px;
   }
-`
-const ProductButton = styled(Button)`
-  position: absolute;
-  top: 425px;
 `
