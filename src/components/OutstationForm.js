@@ -161,8 +161,9 @@ const OutstationForm = () => {
           <FormInputs>
             <FormLabel>Ph.no </FormLabel>
             <FormInput
-              type="number"
+              type="tel"
               name="phno"
+              maxLength="10"
               placeholder="Enter your phone number"
               value={values.phno}
               onChange={handleChange}
@@ -363,6 +364,18 @@ const FormInput = styled.input`
     background-color: rgb(235, 235, 235, 0.9);
     font-size: 1rem;
     /* margin-bottom: 7%; */
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[value="00-00-0000"]::-webkit-datetime-edit {
+    color: transparent;
+  }
+  input[type="date"] {
+    color: blue;
   }
 `
 const FormInputBtn = styled.button`
