@@ -87,7 +87,7 @@ const ProductWrapper = styled.div`
 
   @media screen and (max-width: 868px) {
     grid-template-columns: 1fr;
-    gap: 220px;
+    gap: 240px;
   }
 `
 const ProductCard = styled.div`

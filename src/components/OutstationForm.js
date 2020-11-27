@@ -372,12 +372,6 @@ const FormInput = styled.input`
     -webkit-appearance: none;
     margin: 0;
   }
-  input[value="00-00-0000"]::-webkit-datetime-edit {
-    color: transparent;
-  }
-  input[type="date"] {
-    color: blue;
-  }
 `
 const FormInputBtn = styled.button`
   width: 40%;

@@ -4,9 +4,11 @@ import Header2 from "../components/Header2"
 import CountStats from "../components/CountStats"
 import Stats from "../components/Stats"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 const About = () => {
   return (
     <AboutContainer>
+      <SEO title="About Us" />
       <Layout />
       <Header2 />
       <Heading>About us</Heading>

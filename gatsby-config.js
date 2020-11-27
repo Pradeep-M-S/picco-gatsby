@@ -3,8 +3,10 @@ module.exports = {
     title: `Picco Cabs`,
     description: `Picco cabs - Madurai's Best and Cheapest Cab Services`,
     author: `NoNo design`,
+    siteUrl: `https://www.piccocabs.in`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-styled-components",
     {

@@ -35,7 +35,7 @@ const IconContainer = styled.div`
   @media screen and (max-width: 768px) {
     bottom: 15px;
     right: 15px;
-    padding: 8px;
+    padding: 10px;
   }
 `
 const WhatsappLink = styled.a`
