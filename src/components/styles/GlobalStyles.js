@@ -13,23 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
   body {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Josefin Sans ",sans-serif;
   }
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px white; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #a7be38; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #a7be38; 
-}
 }
 `

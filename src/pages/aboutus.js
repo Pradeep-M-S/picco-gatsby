@@ -34,6 +34,6 @@ const Heading = styled.h1`
   margin: 0 auto;
 `
 const StatsContainer = styled.div`
-  max-width: 90vw;
+  max-width: 100vw;
   overflow: hidden;
 `

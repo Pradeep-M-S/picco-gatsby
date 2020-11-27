@@ -32,21 +32,19 @@ const Trips = ({ heading }) => {
     data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
         <ProductCard key={index}>
-          <Fade>
-            <ProductImg
-              alt={item.node.alt}
-              fluid={item.node.img.childImageSharp.fluid}
-            />
-            <ProductInfo>
-              <TextWrap>
-                <ImLocation />
-                <ProductTitle>{item.node.name}</ProductTitle>
-              </TextWrap>
-              {/* <ProductButton primary round to="/trips">
+          <ProductImg
+            alt={item.node.alt}
+            fluid={item.node.img.childImageSharp.fluid}
+          />
+          <ProductInfo>
+            <TextWrap>
+              <ImLocation />
+              <ProductTitle>{item.node.name}</ProductTitle>
+            </TextWrap>
+            {/* <ProductButton primary round to="/trips">
               {item.node.button}
             </ProductButton> */}
-            </ProductInfo>
-          </Fade>
+          </ProductInfo>
         </ProductCard>
       )
     })
@@ -56,8 +54,12 @@ const Trips = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <ProductsHeading>{heading}</ProductsHeading>
-        <ProductWrapper>{getTrips(data)}</ProductWrapper>
+        <Fade>
+          <ProductsHeading>{heading}</ProductsHeading>
+        </Fade>
+        <Fade>
+          <ProductWrapper>{getTrips(data)}</ProductWrapper>
+        </Fade>
       </ProductsContainer>
     </div>
   )
