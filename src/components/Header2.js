@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { menudata } from "../data/menudata"
 import { Turn as Hamburger } from "hamburger-react"
-import Logo from "../assets/images/tablogo.png"
+import Logo from "../assets/images/tablogo.webp"
 const Header2 = () => {
   const [menuIsOpen, setMenuOpen] = useState(false)
   const [modal3ISOpen, setModal3IsOpen] = useState(false)

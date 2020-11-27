@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import CarGif from "../assets/images/cargif.gif"
+import CarGif from "../assets/images/cargif.webp"
 const ImageContainer = () => {
   return (
     <ImageWrapper>

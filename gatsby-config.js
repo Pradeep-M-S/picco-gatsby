@@ -42,7 +42,7 @@ module.exports = {
       options: {
         fonts: [
           `josefin sans`,
-          `Josefin Sans\:300,400,400i,700`, // you can also specify font weights and styles
+          // `Josefin Sans\:300,400,400i,700`, // you can also specify font weights and styles
         ],
         display: "swap",
       },
