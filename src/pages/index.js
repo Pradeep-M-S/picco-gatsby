@@ -14,7 +14,7 @@ import WhatsappIcon from "../components/WhatsappIcon"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Picco Cabs" />
+    <SEO title="Home" />
     <Blah />
     <WhatsappIcon />
     <Hero1 />

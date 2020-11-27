@@ -60,8 +60,10 @@ const StatsData = [
 const Stats = () => {
   return (
     <StatsContainer>
-      <Fade>
+      <Fade top>
         <Heading>Why Choose Us ?</Heading>
+      </Fade>
+      <Fade>
         <Wrapper>
           {StatsData.map((item, index) => {
             return (

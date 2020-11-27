@@ -51,7 +51,9 @@ const Fleet = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <ProductsHeading>{heading}</ProductsHeading>
+        <Fade top>
+          <ProductsHeading>{heading}</ProductsHeading>
+        </Fade>
         <ProductWrapper>{getOffers(data)}</ProductWrapper>
       </ProductsContainer>
     </div>

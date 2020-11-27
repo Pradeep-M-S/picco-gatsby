@@ -54,7 +54,7 @@ const Trips = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <Fade>
+        <Fade top>
           <ProductsHeading>{heading}</ProductsHeading>
         </Fade>
         <Fade>

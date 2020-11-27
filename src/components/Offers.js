@@ -53,7 +53,7 @@ const Offers = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <Fade>
+        <Fade top>
           <ProductsHeading>{heading}</ProductsHeading>
         </Fade>
         <Fade>
@@ -70,6 +70,10 @@ const ProductsContainer = styled.div`
   min-height: 100vh;
   padding: 5rem calc((100vw - 1300px) / 2);
   color: #fff;
+
+  @media screen and (max-width: 500px) {
+    background: #f6f6f6;
+  }
 `
 const ProductsHeading = styled.h1`
   font-size: clamp(1.5rem, 5vw, 3rem);

@@ -8,7 +8,9 @@ const Testimonials = () => {
     <TestimonialsContainer>
       <Fade>
         <TopLine>Testimonials</TopLine>
-        <Description>What people are Saying</Description>
+        <Fade top>
+          <Description>What people are Saying</Description>
+        </Fade>
         <ContentWrapper>
           <ColumnOne>
             <Testimonial>

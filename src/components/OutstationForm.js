@@ -263,6 +263,7 @@ const FormContent = styled.div`
 `
 const Form = styled.form`
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
@@ -307,7 +308,7 @@ const RBGroupGrouper = styled.div`
 const RBGroup = styled.div`
   display: flex;
   gap: 5px;
-  padding: 5px;
+  margin: 5px;
   align-items: center;
   @media screen and (min-width: 960px) {
     margin-top: 20px;
@@ -402,7 +403,7 @@ const FormInputBtn = styled.button`
   @media screen and (min-width: 960px) {
     width: 50%;
     height: 40px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 0 auto;
     border-radius: 50px;
     background-color: #b2ce25;
     outline: none;

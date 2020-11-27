@@ -9,9 +9,11 @@ import Fade from "react-reveal/Fade"
 const CountStats = () => {
   return (
     <CountStatsContainer>
-      <Fade>
+      <Fade top>
         <Heading>Our Expertise</Heading>
-        <Description>Our record and achievements since 2015</Description>
+      </Fade>
+      <Description>Our record and achievements since 2015</Description>
+      <Fade>
         <IconContext.Provider value={{ color: "#000", size: "3em" }}>
           <AllCountContainer>
             <IndividualCounter>
