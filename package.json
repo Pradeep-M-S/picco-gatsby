@@ -27,6 +27,7 @@
     "react-icons": "^3.11.0",
     "react-modal": "^3.12.1",
     "react-reveal": "^1.2.2",
+    "react-scroll": "^1.8.1",
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.2.1"
   },

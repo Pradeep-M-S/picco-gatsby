@@ -306,7 +306,8 @@ const RBGroupGrouper = styled.div`
 `
 const RBGroup = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 5px;
+  padding: 5px;
   align-items: center;
   @media screen and (min-width: 960px) {
     margin-top: 20px;
@@ -358,10 +359,11 @@ const FormInput = styled.input`
   transition: all 0.6s ease;
   position: relative;
   &::placeholder {
-    color: #000;
+    color: grey;
     transition: all 0.6s ease;
     background-color: rgb(235, 235, 235, 0.9);
     font-size: 1rem;
+    font-weight: 300;
     /* margin-bottom: 7%; */
   }
 

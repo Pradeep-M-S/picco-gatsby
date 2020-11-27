@@ -117,7 +117,7 @@ const Icon = styled.div`
   margin-bottom: 2rem;
 `
 const Title = styled.p`
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   font-weight: bold;
   margin-bottom: 0.5rem;
 `

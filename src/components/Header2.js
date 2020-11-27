@@ -1,16 +1,24 @@
 import { Link } from "gatsby"
+import { animateScroll as scroll } from "react-scroll"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { menudata } from "../data/menudata"
-import { Button } from "./Button"
 import { Turn as Hamburger } from "hamburger-react"
 import Logo from "../assets/images/tablogo.png"
 const Header2 = () => {
   const [menuIsOpen, setMenuOpen] = useState(false)
+  const [modal3ISOpen, setModal3IsOpen] = useState(false)
+
+  const scrollToTop = () => {
+    scroll.scrollToTop()
+  }
+  const closeModal = () => {
+    setModal3IsOpen(false)
+  }
 
   return (
     <NavContainer>
-      <LogoContainer>
+      <LogoContainer onClick={scrollToTop}>
         <img src={Logo} alt="logo" />
       </LogoContainer>
       <BarsContainer>
@@ -49,11 +57,6 @@ const Header2 = () => {
           ))}
         </NavMobileMenu>
       ) : null}
-      <NavBtn>
-        <Button primary round big to="/trips">
-          Book a Taxi
-        </Button>
-      </NavBtn>
     </NavContainer>
   )
 }
@@ -158,7 +161,7 @@ const NavMobileMenu = styled.div`
   align-items: center;
   height: 200px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.985);
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
   transition: all 0.5s ease;
