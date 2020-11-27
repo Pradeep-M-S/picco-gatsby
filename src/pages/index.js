@@ -12,10 +12,12 @@ import Offers from "../components/Offers"
 import Fleet from "../components/Fleet"
 import Blah from "../components/Blah"
 import Hero1 from "../components/Hero1"
+import WhatsappIcon from "../components/WhatsappIcon"
 const IndexPage = () => (
   <Layout>
     <SEO title="Picco Cabs" />
     <Blah />
+    <WhatsappIcon />
     <Hero1 />
     <Fade bottom>
       <Offers heading="Great offers for you" />

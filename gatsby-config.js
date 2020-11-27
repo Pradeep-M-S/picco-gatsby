@@ -42,5 +42,16 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Josefin Sans`,
+            variants: [`300`, `400`, `700`, `500`, `600`],
+          },
+        ],
+      },
+    },
   ],
 }

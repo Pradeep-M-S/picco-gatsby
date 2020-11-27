@@ -15,11 +15,12 @@ const Header2 = () => {
       </LogoContainer>
       <BarsContainer>
         <Hamburger
+          style={{ color: "inherit" }}
           rounded
           label="Show menu"
           easing="ease"
           color="#000"
-          direction="right"
+          direction="left"
           size={29}
           distance="md"
           duration={0.4}
@@ -60,6 +61,7 @@ const Header2 = () => {
 export default Header2
 
 const NavContainer = styled.div`
+  font-family: "Josephin Sans", sans-serif;
   height: 100px;
   border-radius: 0 0 50px 50px;
   justify-content: space-between;
@@ -107,7 +109,7 @@ const NavMobilelink = styled(Link)`
 const BarsContainer = styled.div`
   display: none;
   color: white;
-
+  color: "inherit";
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -115,6 +117,9 @@ const BarsContainer = styled.div`
     right: 0;
     transform: translate(-50%, 50%);
     cursor: pointer;
+  }
+  i {
+    color: inherit;
   }
 `
 

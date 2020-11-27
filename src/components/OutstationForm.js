@@ -244,9 +244,9 @@ const OutstationForm = () => {
 export default OutstationForm
 
 const FormContainer = styled.div`
-  margin: 30px auto;
+  margin: 20px auto 0 auto;
   width: 80%;
-  height: 100%;
+  height: 50%;
   z-index: 1000;
   display: grid;
 

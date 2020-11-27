@@ -27,6 +27,7 @@ const Hero1Container = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    height: 100vh;
+    min-height: 100vh;
+    gap: -50px;
   }
 `
