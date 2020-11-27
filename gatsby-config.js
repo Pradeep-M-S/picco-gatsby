@@ -8,6 +8,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-robots-txt",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.piccocabs.in",
+        sitemap: "https://www.piccocabs.in/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,10 +49,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `josefin sans`,
-          // `Josefin Sans\:300,400,400i,700`, // you can also specify font weights and styles
-        ],
+        fonts: [`josefin sans`],
         display: "swap",
       },
     },
