@@ -267,7 +267,7 @@ const Form = styled.form`
   justify-content: space-between;
   gap: 10px;
   align-items: center;
-  border: 2px solid thistle;
+  border: 2px solid white;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5%;
@@ -291,7 +291,6 @@ const Form = styled.form`
 const FormSelectorComponent = styled.div`
   display: none;
 `
-const FormInputs1 = styled.div``
 
 const RBGroupGrouper = styled.div`
   margin-top: 20px;

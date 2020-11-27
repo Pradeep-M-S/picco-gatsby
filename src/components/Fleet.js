@@ -30,16 +30,18 @@ const Fleet = ({ heading }) => {
     data.allFleetsJson.edges.forEach((item, index) => {
       tripsArray.push(
         <ProductCard key={index}>
-          <ProductImg
-            alt={item.node.alt}
-            fluid={item.node.img.childImageSharp.fluid}
-          />
-          <ProductInfo>
-            <TextWrap>
-              <ProductTitle>{item.node.name}</ProductTitle>
-              <OfferDescription>{item.node.offerdesc}</OfferDescription>
-            </TextWrap>
-          </ProductInfo>
+          <Fade>
+            <ProductImg
+              alt={item.node.alt}
+              fluid={item.node.img.childImageSharp.fluid}
+            />
+            <ProductInfo>
+              <TextWrap>
+                <ProductTitle>{item.node.name}</ProductTitle>
+                <OfferDescription>{item.node.offerdesc}</OfferDescription>
+              </TextWrap>
+            </ProductInfo>
+          </Fade>
         </ProductCard>
       )
     })
@@ -49,12 +51,8 @@ const Fleet = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <Fade bottom>
-          <ProductsHeading>{heading}</ProductsHeading>
-        </Fade>
-        <Fade right>
-          <ProductWrapper>{getOffers(data)}</ProductWrapper>
-        </Fade>
+        <ProductsHeading>{heading}</ProductsHeading>
+        <ProductWrapper>{getOffers(data)}</ProductWrapper>
       </ProductsContainer>
     </div>
   )

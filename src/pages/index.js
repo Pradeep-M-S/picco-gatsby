@@ -1,8 +1,6 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/Hero"
 import Trips from "../components/Trips"
 import Testimonials from "../components/Testimonials"
 import Stats from "../components/Stats"
@@ -19,26 +17,12 @@ const IndexPage = () => (
     <Blah />
     <WhatsappIcon />
     <Hero1 />
-    <Fade bottom>
-      <Offers heading="Great offers for you" />
-    </Fade>
-    <Fade bottom>
-      <Fleet heading="Picco's Fleet" />
-    </Fade>
-    <Fade bottom>
-      <CountStats />{" "}
-    </Fade>
-    <Fade left>
-      <Trips heading="Popular Destinations" />
-    </Fade>{" "}
-    <Fade right>
-      <Testimonials />
-    </Fade>
-    <Fade left>
-      <Stats />
-    </Fade>{" "}
-    <Hero />
-    <Footer />
+    <Offers heading="Great offers for you" />
+    <Fleet heading="Picco's Fleet" />
+    <CountStats />
+    <Testimonials />
+    <Stats />
+    <Trips heading="Popular Destinations" /> <Footer />
   </Layout>
 )
 

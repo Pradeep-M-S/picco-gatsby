@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
+
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { ImLocation } from "react-icons/im"
@@ -30,19 +32,21 @@ const Trips = ({ heading }) => {
     data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
         <ProductCard key={index}>
-          <ProductImg
-            alt={item.node.alt}
-            fluid={item.node.img.childImageSharp.fluid}
-          />
-          <ProductInfo>
-            <TextWrap>
-              <ImLocation />
-              <ProductTitle>{item.node.name}</ProductTitle>
-            </TextWrap>
-            {/* <ProductButton primary round to="/trips">
+          <Fade>
+            <ProductImg
+              alt={item.node.alt}
+              fluid={item.node.img.childImageSharp.fluid}
+            />
+            <ProductInfo>
+              <TextWrap>
+                <ImLocation />
+                <ProductTitle>{item.node.name}</ProductTitle>
+              </TextWrap>
+              {/* <ProductButton primary round to="/trips">
               {item.node.button}
             </ProductButton> */}
-          </ProductInfo>
+            </ProductInfo>
+          </Fade>
         </ProductCard>
       )
     })

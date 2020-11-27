@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Picco Cabs`,
+    description: `Picco cabs - Madurai's Best and Cheapest Cab Services`,
+    author: `NoNo design`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,13 +12,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `videos`,
-        path: `${__dirname}/src/assets/videos`,
       },
     },
     `gatsby-transformer-sharp`,

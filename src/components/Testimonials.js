@@ -1,103 +1,105 @@
 import React from "react"
-import Img from "gatsby-image"
+import Fade from "react-reveal/Fade"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { FaRegLightbulb, FaAirFreshener } from "react-icons/fa"
 import styled from "styled-components"
 const Testimonials = () => {
   return (
     <TestimonialsContainer>
-      <TopLine>Testimonials</TopLine>
-      <Description>What people are Saying</Description>
-      <ContentWrapper>
-        <ColumnOne>
-          <Testimonial>
-            {" "}
-            <IoMdCheckmarkCircleOutline
-              css={`
-                font-size: 2rem;
-                color: #3fffa8;
-                margin-bottom: 1rem;
-              `}
-            />
-            <h3>Sanju</h3>
-            <p>
-              Good approach... Nice Customer interaction... Worth to call again,
-              I am really happy to had the best cab.
-            </p>
-          </Testimonial>
-          <Testimonial>
-            <FaRegLightbulb
-              css={`
-                font-size: 2rem;
-                color: #f9b19b;
-                margin-bottom: 1rem;
-              `}
-            />
-            <h3>Rahul</h3>
-            <p>
-              Well behaved. Good driving, Friendly. This is my first ride with
-              redtaxi and is better than expected.
-            </p>
-          </Testimonial>{" "}
-          <Testimonial>
-            <FaAirFreshener
-              css={`
-                font-size: 2rem;
-                color: #f9129b;
-                margin-bottom: 1rem;
-              `}
-            />
-            <h3>Mahalakshmi Sundaram</h3>
-            <p>
-              The vehicle is in good condition. The driver is very professional
-              and friendly as well as drives safely.
-            </p>
-          </Testimonial>{" "}
-          <Testimonial>
-            {" "}
-            <IoMdCheckmarkCircleOutline
-              css={`
-                font-size: 2rem;
-                color: #3fffa8;
-                margin-bottom: 1rem;
-              `}
-            />
-            <h3>Madhavan</h3>
-            <p>
-              Good approach... Nice Customer interaction... Worth to call again,
-              I am really happy to had the best cab.
-            </p>
-          </Testimonial>
-          <Testimonial>
-            <FaRegLightbulb
-              css={`
-                font-size: 2rem;
-                color: #f9b19b;
-                margin-bottom: 1rem;
-              `}
-            />
-            <h3>Anbu Sivam</h3>
-            <p>
-              Well behaved. Good driving, Friendly. This is my first ride with
-              redtaxi and is better than expected.
-            </p>
-          </Testimonial>{" "}
-          <Testimonial>
-            <FaAirFreshener
-              css={`
-                font-size: 2rem;
-                color: #f9129b;
-                margin-bottom: 1rem;
-              `}
-            />
-            <h3>Sundar</h3>
-            <p>
-              The vehicle is in good condition. The driver is very professional
-              and friendly as well as drives safely.
-            </p>
-          </Testimonial>
-        </ColumnOne>
-      </ContentWrapper>
+      <Fade>
+        <TopLine>Testimonials</TopLine>
+        <Description>What people are Saying</Description>
+        <ContentWrapper>
+          <ColumnOne>
+            <Testimonial>
+              {" "}
+              <IoMdCheckmarkCircleOutline
+                css={`
+                  font-size: 2rem;
+                  color: #3fffa8;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Sanju</h3>
+              <p>
+                Good approach... Nice Customer interaction... Worth to call
+                again, I am really happy to had the best cab.
+              </p>
+            </Testimonial>
+            <Testimonial>
+              <FaRegLightbulb
+                css={`
+                  font-size: 2rem;
+                  color: #f9b19b;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Rahul</h3>
+              <p>
+                Well behaved. Good driving, Friendly. This is my first ride with
+                redtaxi and is better than expected.
+              </p>
+            </Testimonial>{" "}
+            <Testimonial>
+              <FaAirFreshener
+                css={`
+                  font-size: 2rem;
+                  color: #f9129b;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Mahalakshmi Sundaram</h3>
+              <p>
+                The vehicle is in good condition. The driver is very
+                professional and friendly as well as drives safely.
+              </p>
+            </Testimonial>{" "}
+            <Testimonial>
+              {" "}
+              <IoMdCheckmarkCircleOutline
+                css={`
+                  font-size: 2rem;
+                  color: #3fffa8;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Madhavan</h3>
+              <p>
+                Good approach... Nice Customer interaction... Worth to call
+                again, I am really happy to had the best cab.
+              </p>
+            </Testimonial>
+            <Testimonial>
+              <FaRegLightbulb
+                css={`
+                  font-size: 2rem;
+                  color: #f9b19b;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Anbu Sivam</h3>
+              <p>
+                Well behaved. Good driving, Friendly. This is my first ride with
+                redtaxi and is better than expected.
+              </p>
+            </Testimonial>{" "}
+            <Testimonial>
+              <FaAirFreshener
+                css={`
+                  font-size: 2rem;
+                  color: #f9129b;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Sundar</h3>
+              <p>
+                The vehicle is in good condition. The driver is very
+                professional and friendly as well as drives safely.
+              </p>
+            </Testimonial>
+          </ColumnOne>
+        </ContentWrapper>{" "}
+      </Fade>
     </TestimonialsContainer>
   )
 }
@@ -154,18 +156,4 @@ const ColumnOne = styled.div`
   @media screen and (max-width: 320px) {
     grid-template-columns: 1fr;
   }
-`
-const ColumnTwo = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
-  grid-gap: 10px;
-
-  @media screen and (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
-`
-const Images = styled(Img)`
-  height: 100%;
-  border-radius: 10px;
 `

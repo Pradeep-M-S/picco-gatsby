@@ -2,16 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import OutstationForm from "./OutstationForm"
 import ImageContainer from "./ImageContainer"
-import Fade from "react-reveal/Fade"
 const Hero1 = () => {
   return (
     <Hero1Container>
-      {/* <Fade> */}
       <OutstationForm />
-      {/* </Fade> */}
-      {/* <Fade right> */}
       <ImageContainer />
-      {/* </Fade> */}
     </Hero1Container>
   )
 }

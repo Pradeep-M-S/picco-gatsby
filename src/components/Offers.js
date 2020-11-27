@@ -53,10 +53,10 @@ const Offers = ({ heading }) => {
   return (
     <div>
       <ProductsContainer>
-        <Fade top>
+        <Fade>
           <ProductsHeading>{heading}</ProductsHeading>
         </Fade>
-        <Fade left>
+        <Fade>
           <ProductWrapper>{getOffers(data)}</ProductWrapper>
         </Fade>
       </ProductsContainer>

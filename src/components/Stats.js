@@ -1,4 +1,6 @@
 import React from "react"
+import Fade from "react-reveal/Fade"
+
 import styled from "styled-components"
 import { FaRupeeSign } from "react-icons/fa"
 import { FcOnlineSupport } from "react-icons/fc"
@@ -58,18 +60,20 @@ const StatsData = [
 const Stats = () => {
   return (
     <StatsContainer>
-      <Heading>Why Choose Us ?</Heading>
-      <Wrapper>
-        {StatsData.map((item, index) => {
-          return (
-            <StatsBox key={index}>
-              <Icon>{item.icon}</Icon>
-              <Title>{item.title}</Title>
-              <Description>{item.desc}</Description>
-            </StatsBox>
-          )
-        })}
-      </Wrapper>
+      <Fade>
+        <Heading>Why Choose Us ?</Heading>
+        <Wrapper>
+          {StatsData.map((item, index) => {
+            return (
+              <StatsBox key={index}>
+                <Icon>{item.icon}</Icon>
+                <Title>{item.title}</Title>
+                <Description>{item.desc}</Description>
+              </StatsBox>
+            )
+          })}
+        </Wrapper>
+      </Fade>
     </StatsContainer>
   )
 }

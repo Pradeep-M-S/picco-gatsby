@@ -5,69 +5,72 @@ import VisibilitySensor from "react-visibility-sensor"
 import { FaTaxi, FaRoad, FaUserAlt } from "react-icons/fa"
 import { MdSecurity } from "react-icons/md"
 import { IconContext } from "react-icons"
+import Fade from "react-reveal/Fade"
 const CountStats = () => {
   return (
     <CountStatsContainer>
-      <Heading>Our Expertise</Heading>
-      <Description>Our record and achievements since 2015</Description>
-      <IconContext.Provider value={{ color: "#000", size: "3em" }}>
-        <AllCountContainer>
-          <IndividualCounter>
-            <FaTaxi />
-            <h1>
-              <CountUp end={848} redraw={true}>
-                {({ countUpRef, start }) => (
-                  <VisibilitySensor onChange={start} delayedCall>
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
-              </CountUp>
-            </h1>
-            <h2>Rides and More</h2>
-          </IndividualCounter>{" "}
-          <IndividualCounter>
-            <FaRoad />
-            <h1>
-              <CountUp end={120} redraw={true}>
-                {({ countUpRef, start }) => (
-                  <VisibilitySensor onChange={start} delayedCall>
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
-              </CountUp>
-            </h1>
-            <h2>Routes</h2>
-          </IndividualCounter>
-          <IndividualCounter>
-            <FaUserAlt />
-            <h1>
-              {" "}
-              <CountUp end={400} suffix="+" redraw={true}>
-                {({ countUpRef, start }) => (
-                  <VisibilitySensor onChange={start} delayedCall>
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
-              </CountUp>
-            </h1>
-            <h2>Happy customers</h2>
-          </IndividualCounter>
-          <IndividualCounter>
-            <MdSecurity />
-            <h1>
-              {" "}
-              <CountUp end={62} suffix="+" redraw={true}>
-                {({ countUpRef, start }) => (
-                  <VisibilitySensor onChange={start} delayedCall>
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
-              </CountUp>
-            </h1>
-            <h2>Trusted Vehicles</h2>
-          </IndividualCounter>
-        </AllCountContainer>
-      </IconContext.Provider>
+      <Fade>
+        <Heading>Our Expertise</Heading>
+        <Description>Our record and achievements since 2015</Description>
+        <IconContext.Provider value={{ color: "#000", size: "3em" }}>
+          <AllCountContainer>
+            <IndividualCounter>
+              <FaTaxi />
+              <h1>
+                <CountUp end={848} redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+              </h1>
+              <h2>Rides and More</h2>
+            </IndividualCounter>{" "}
+            <IndividualCounter>
+              <FaRoad />
+              <h1>
+                <CountUp end={120} redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+              </h1>
+              <h2>Routes</h2>
+            </IndividualCounter>
+            <IndividualCounter>
+              <FaUserAlt />
+              <h1>
+                {" "}
+                <CountUp end={400} suffix="+" redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+              </h1>
+              <h2>Happy customers</h2>
+            </IndividualCounter>
+            <IndividualCounter>
+              <MdSecurity />
+              <h1>
+                {" "}
+                <CountUp end={62} suffix="+" redraw={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+              </h1>
+              <h2>Trusted Vehicles</h2>
+            </IndividualCounter>
+          </AllCountContainer>
+        </IconContext.Provider>
+      </Fade>
     </CountStatsContainer>
   )
 }
