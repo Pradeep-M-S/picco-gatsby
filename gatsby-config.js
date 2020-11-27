@@ -43,14 +43,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Josefin Sans`,
-            variants: [`300`, `400`, `700`, `500`, `600`],
-          },
+          `josefin sans`,
+          `Josefin Sans\:300,400,400i,700`, // you can also specify font weights and styles
         ],
+        display: "swap",
       },
     },
   ],
