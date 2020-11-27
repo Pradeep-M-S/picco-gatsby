@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { Button } from "./Button"
 import styled from "styled-components"
-import { FaSpinner } from "react-icons/fa"
+import { CgSpinner } from "react-icons/cg"
 import Modal from "react-modal"
-
+import Logo from "../assets/images/booked.svg"
 const OutstationForm = () => {
   const [values, setValues] = useState({
     from: "",
@@ -55,7 +55,7 @@ const OutstationForm = () => {
       Username: "pradeepmsblogspot@gmail.com",
       Password: "ibxdnieqkadegcua",
       From: "pradeepmsblogspot@gmail.com",
-      To: "pradeepmsblogspot@gmail.com",
+      To: "athmikasundaram@gmail.com",
       Subject: `Mr/Ms.${name} Booked a Cab`,
       Body: `Name: ${name} <br/> From : ${from} <br/>  To : ${to}  <br/>  date : ${date} <br/>  Phone Number : ${phno} <br/> Ride Option : ${way}`,
     }).then(() => {
@@ -171,10 +171,21 @@ const OutstationForm = () => {
           </FormInputs>
           {loading ? (
             <FormInputBtn>
-              <FaSpinner />
+              <FormInputBtnSpin>
+                <CgSpinner />
+              </FormInputBtnSpin>
             </FormInputBtn>
           ) : (
-            <FormInputBtn onClick={() => setLoading(true)} type="submit">
+            <FormInputBtn
+              primary
+              small
+              round
+              onClick={() => setLoading(true)}
+              type="submit"
+              style={{
+                margin: "10px auto",
+              }}
+            >
               Book Now
             </FormInputBtn>
           )}
@@ -208,8 +219,21 @@ const OutstationForm = () => {
           isOpen={modal2ISOpen}
           onRequestClose={() => setModal2IsOpen(false)}
         >
+          <SVGContainer>
+            <img src={Logo} alt="booked" />
+          </SVGContainer>
           <h1>Booked Succesfully</h1>
-          <Button onClick={closeModal}> &#10094; Back</Button>
+          <Button
+            primary
+            round
+            onClick={closeModal}
+            style={{
+              margin: "0 auto",
+            }}
+          >
+            {" "}
+            O K
+          </Button>
         </Modal>
       </FormContent>
     </FormContainer>
@@ -221,15 +245,14 @@ export default OutstationForm
 const FormContainer = styled.div`
   margin: 30px auto;
   width: 80%;
-  position: relative;
-  height: 110%;
+  height: 100%;
   z-index: 1000;
   display: grid;
 
   @media screen and (min-width: 960px) {
-    margin-top: 0;
+    margin: 50px auto;
     width: 100%;
-    height: 95vh;
+    height: 100%;
   }
 `
 const FormContent = styled.div`
@@ -238,12 +261,6 @@ const FormContent = styled.div`
   color: black;
 `
 const Form = styled.form`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,7 +270,7 @@ const Form = styled.form`
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5%;
-
+  margin: 0 auto;
   h1 {
     font-size: 1rem;
     width: 80%;
@@ -261,9 +278,9 @@ const Form = styled.form`
   }
 
   @media screen and (min-width: 960px) {
-    transform: translate(-50%, -50%);
     height: 60%;
     width: 70%;
+    gap: 5px;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     justify-content: center;
@@ -360,33 +377,62 @@ const FormInputBtn = styled.button`
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
-  padding: 8px;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  padding: 0px;
   transition: all 0.4s ease-out;
 
   &:hover {
     cursor: pointer;
-
-    background-color: #a7be39;
-    background-color: #89a006;
-
     transition: all 0.4s ease-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.9);
+    color: #89a006;
+    font-weight: bold;
   }
 
   @media screen and (min-width: 960px) {
     width: 50%;
     height: 40px;
     margin: 0 auto 20px auto;
-    /* margin-top: 10px; */
     border-radius: 50px;
     background-color: #b2ce25;
     outline: none;
     border: none;
     text-transform: uppercase;
     font-size: 1.2rem;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: 500;
     transition: all 0.4s ease-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+`
+
+const FormInputBtnSpin = styled.button`
+  animation: spin 2s infinite;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 auto;
+  color: #fff;
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`
+const SVGContainer = styled.div`
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 `

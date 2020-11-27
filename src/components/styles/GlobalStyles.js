@@ -9,13 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     max-width:100vw;
     scroll-behavior:smooth;
     ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 5px;
+  box-shadow: inset 0 0 5px white; 
 }
  
 /* Handle */
