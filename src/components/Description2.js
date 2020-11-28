@@ -29,12 +29,6 @@ const Description2 = () => {
 
   return (
     <DescriptionContainer>
-      <Fade>
-        <DescriptionText>
-          <h1>Book yours Now</h1>
-          <h2>Your destination is our goal . </h2>
-        </DescriptionText>
-      </Fade>
       <Fade bottom>
         <DescriptionImage>
           <MockupImage
@@ -42,6 +36,12 @@ const Description2 = () => {
             alt={images[0].node.base.split(".")[0]}
           ></MockupImage>
         </DescriptionImage>
+      </Fade>
+      <Fade>
+        <DescriptionText>
+          <h1>Book your Cab Now</h1>
+          <h2>Your destination is our goal . </h2>
+        </DescriptionText>
       </Fade>
     </DescriptionContainer>
   )
@@ -56,6 +56,9 @@ const DescriptionContainer = styled.div`
   padding: 0;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    min-height: 0;
+    gap: 20px;
   }
 `
 const DescriptionText = styled.div`
