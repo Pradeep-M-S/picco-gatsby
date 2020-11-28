@@ -9,18 +9,19 @@ import Description from "../components/Description"
 import Description2 from "../components/Description2"
 const About = () => {
   return (
-    <AboutContainer>
-      <SEO title="About Us" />
-      <Layout />
-      <Header2 />
-      <Heading>About us</Heading>
-      <Description />
-      <Description2 />
-      <CountStats />
-      <StatsContainer>
-        <Stats />
-      </StatsContainer>
-    </AboutContainer>
+    <Layout>
+      <AboutContainer>
+        <SEO title="About Us" />
+        <Header2 />
+        <Heading>About us</Heading>
+        <Description />
+        <Description2 />
+        <CountStats />
+        <StatsContainer>
+          <Stats />
+        </StatsContainer>
+      </AboutContainer>
+    </Layout>
   )
 }
 
