@@ -36,7 +36,7 @@ const OutstationForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-
+    setLoading(true)
     //calling smtp service with the form values
     sendEmail(
       values.from,
@@ -71,7 +71,7 @@ const OutstationForm = () => {
   return (
     <FormContainer>
       <FormContent>
-        <Form onSubmit={handleSubmit} noValidate>
+        <Form onSubmit={handleSubmit}>
           <FormSelectorComponent>
             <Button to="/">Outstations</Button>
             <Button to="/rentals">Rentals</Button>
@@ -115,6 +115,7 @@ const OutstationForm = () => {
             <FormInputs>
               <FormLabel>Name </FormLabel>
               <FormInput
+                autoComplete="off"
                 type="text"
                 name="name"
                 placeholder="Enter your Name"
@@ -139,6 +140,7 @@ const OutstationForm = () => {
           <FormInputs>
             <FormLabel>To </FormLabel>
             <FormInput
+              autoComplete="off"
               type="text"
               name="to"
               placeholder="Enter your Drop Point"
@@ -181,7 +183,7 @@ const OutstationForm = () => {
               primary
               small
               round
-              onClick={() => setLoading(true)}
+              // onClick={() => setLoading(true)}
               type="submit"
               style={{
                 margin: "10px auto",

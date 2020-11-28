@@ -30,7 +30,7 @@ const RentalForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-
+    setLoading(true)
     //calling smtp service with the form values
     sendEmail(values.name, values.from, values.package, values.phno)
   }
@@ -58,7 +58,7 @@ const RentalForm = () => {
   return (
     <FormContainer2>
       <FormContent2>
-        <Form2 onSubmit={handleSubmit} noValidate>
+        <Form2 onSubmit={handleSubmit}>
           <FormInputs2></FormInputs2>
           <FormInputs2>
             <FormLabel2>Name </FormLabel2>
@@ -122,7 +122,7 @@ const RentalForm = () => {
             </FormInputBtn2>
           ) : (
             <FormInputBtn2
-              onClick={() => setLoading(true)}
+              //   onClick={() => setLoading(true)}
               type="submit"
               style={{
                 margin: "10px auto",
