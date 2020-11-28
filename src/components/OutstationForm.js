@@ -96,7 +96,6 @@ const OutstationForm = () => {
                   value="Two-way"
                   checked={way === "Two-way"}
                   onChange={e => setWay("Two-way")}
-                  required
                 />
                 Round Trip{" "}
               </RBGroup>

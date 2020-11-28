@@ -51,7 +51,7 @@ const RentalForm = () => {
 
       setTimeout(() => {
         setModal2IsOpen(false)
-      }, 5000)
+      }, 3000)
     })
   }
 
