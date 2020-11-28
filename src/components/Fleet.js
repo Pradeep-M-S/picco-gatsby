@@ -15,7 +15,7 @@ const Fleet = ({ heading }) => {
             img {
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

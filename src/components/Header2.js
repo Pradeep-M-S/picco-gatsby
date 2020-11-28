@@ -7,13 +7,9 @@ import { Turn as Hamburger } from "hamburger-react"
 import Logo from "../assets/images/tablogo.webp"
 const Header2 = () => {
   const [menuIsOpen, setMenuOpen] = useState(false)
-  const [modal3ISOpen, setModal3IsOpen] = useState(false)
 
   const scrollToTop = () => {
     scroll.scrollToTop()
-  }
-  const closeModal = () => {
-    setModal3IsOpen(false)
   }
 
   return (
@@ -175,15 +171,5 @@ const NavMobileMenu = styled.div`
       opacity: 1;
       bottom: 0;
     }
-  }
-`
-
-const NavBtn = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
   }
 `

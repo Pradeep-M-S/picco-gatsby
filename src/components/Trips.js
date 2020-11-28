@@ -17,7 +17,7 @@ const Trips = ({ heading }) => {
             img {
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

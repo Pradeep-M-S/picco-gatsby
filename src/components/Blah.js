@@ -32,7 +32,7 @@ const SlideShow = () => {
             base
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
