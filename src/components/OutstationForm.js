@@ -304,6 +304,10 @@ const RBGroupGrouper = styled.div`
   justify-content: center;
   text-align: center;
   margin-bottom: 7%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `
 const RBGroup = styled.div`
   display: flex;
@@ -365,13 +369,19 @@ const FormInput = styled.input`
     background-color: rgb(235, 235, 235, 0.9);
     font-size: 1rem;
     font-weight: 300;
-    /* margin-bottom: 7%; */
+    display: flex;
+    place-items: center;
   }
 
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+
+  input[type="date"] {
+    display: flex;
+    place-items: center;
   }
 `
 const FormInputBtn = styled.button`
@@ -385,7 +395,7 @@ const FormInputBtn = styled.button`
   border: none;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 2px;
   padding: 0px;

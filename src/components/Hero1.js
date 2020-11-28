@@ -44,8 +44,8 @@ const Hero1Container = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    max-height: 100vh;
-    gap: -50px;
+    height: 100%;
+    gap: 100px;
   }
 `
 const FormsContainer = styled.div`
@@ -56,6 +56,7 @@ const FormsContainer = styled.div`
     display: flex;
     max-height: 10%;
     flex-direction: column;
+    justify-content: space-baseline;
   }
 `
 const ButtonContainer = styled.div`
@@ -66,6 +67,10 @@ const ButtonContainer = styled.div`
   place-items: center;
   gap: 2px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: -16px;
+  }
 `
 const Button2 = styled.button`
   background: ${({ rentalComponent }) =>

@@ -111,16 +111,17 @@ const RentalForm = () => {
             />
           </FormInputs2>
           {loading ? (
-            <FormInputBtn2>
+            <FormInputBtn2
+              style={{
+                margin: "10px auto",
+              }}
+            >
               <FormInputBtnSpin2>
                 <CgSpinner2 />
               </FormInputBtnSpin2>
             </FormInputBtn2>
           ) : (
             <FormInputBtn2
-              primary
-              small
-              round
               onClick={() => setLoading(true)}
               type="submit"
               style={{
@@ -204,10 +205,10 @@ const FormContent2 = styled.div`
 `
 const Form2 = styled.form`
   display: grid;
-  grid-template-rows: repeat(7, 1fr);
-  height: 60%;
+  grid-template-rows: repeat(5, 1fr);
+  height: 90%;
   width: 100%;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   border: 2px solid white;
   background-color: rgb(255, 255, 255);
@@ -221,7 +222,7 @@ const Form2 = styled.form`
   }
 
   @media screen and (min-width: 960px) {
-    height: 60%;
+    height: 50%;
     width: 70%;
     gap: 10px;
     display: grid;
@@ -299,7 +300,7 @@ const FormInputBtn2 = styled.button`
   border: none;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 2px;
   padding: 0px;
