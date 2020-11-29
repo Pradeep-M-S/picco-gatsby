@@ -22,7 +22,7 @@ const IndexPage = () => (
     <Fleet heading="Picco's Fleet" />
     <Stats />
     <CountStats />
-    <Testimonials />
+    {/* <Testimonials /> */}
     <Trips id="trips" heading="Popular Destinations" /> <Footer />
   </Layout>
 )
