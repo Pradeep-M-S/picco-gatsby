@@ -81,7 +81,6 @@ const GifWrapper = styled.div`
 const Image = styled.img`
   transform: scale(0.8);
   width: 100%;
-  position: absolute;
   top: 0;
   margin-bottom: 40px;
   @media screen and (max-width: 768px) {
@@ -93,9 +92,12 @@ const SocialIcons = styled.div`
   width: 50%;
   justify-self: center;
   display: grid;
+  margin: 0 auto;
+  margin-top: -200px;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
   @media screen and (max-width: 768px) {
     width: 70%;
+    margin-top: -10px;
   }
 `

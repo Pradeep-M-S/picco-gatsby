@@ -115,8 +115,15 @@ const StatsBox = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 2rem;
-  background: #eee;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.09) translateY(-4px);
+    transition: all 0.5s ease;
+    background: #a7be38;
+  }
 `
 const Icon = styled.div`
   font-size: 3rem;

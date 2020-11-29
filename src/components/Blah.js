@@ -73,14 +73,13 @@ const ProductImg = styled(Img)`
   min-width: 38%;
   max-width: 100%;
   margin: 0 auto;
-  animation: fade 2s forwards;
+  animation: fade 2s forwards ease;
   @keyframes fade {
     from {
-      transform: translateX(-1000px);
-      /* transform: scale(0.85); */
+      transform: scale(0.85) translateX(-1000px);
     }
     to {
-      transform: translateX(0); /* transform: scale(1); */
+      transform: scale(1) translateX(0);
     }
   }
   @media screen and (max-width: 900px) {

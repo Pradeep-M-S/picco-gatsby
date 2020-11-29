@@ -104,7 +104,7 @@ const AllCountContainer = styled.div`
   gap: 20px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 70px;
   }
   @media screen and (max-width: 328px) {

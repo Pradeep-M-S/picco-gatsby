@@ -142,8 +142,8 @@ const RentalForm = () => {
               zIndex: "100000000000000",
             },
             content: {
-              backgroundColor: "#151719",
-              boxShadow: "0 3px 15px black",
+              backgroundColor: "#a7be38",
+              // boxShadow: "0 3px 1px black",
               zIndex: "1000000000000",
               border: "none",
               borderRadius: "20px",
@@ -172,6 +172,8 @@ const RentalForm = () => {
             onClick={closeModal}
             style={{
               margin: "0 auto",
+              color: "#fff",
+              backgroundColor: "#000",
             }}
           >
             {" "}
@@ -250,9 +252,10 @@ const FormLabel2 = styled.label`
   display: flex;
   height: 40px;
   place-items: center;
+  font-weight: 500;
   font-size: 0.9rem;
   padding-left: 10px;
-  color: rgba(0, 0, 0, 0.578);
+  color: rgba(0, 0, 0, 0.678);
   background-color: rgba(235, 235, 235, 0.9);
 
   @media screen and (min-width: 960px) {
@@ -310,8 +313,8 @@ const FormInputBtn2 = styled.button`
     cursor: pointer;
     transition: all 0.4s ease-out;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.9);
-    color: #89a006;
+    background: #a1a2a1;
+    color: #fff;
     font-weight: bold;
   }
 

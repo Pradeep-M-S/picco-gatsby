@@ -345,9 +345,10 @@ const FormLabel = styled.label`
   display: flex;
   height: 40px;
   place-items: center;
+  font-weight: 500;
   font-size: 1rem;
   padding-left: 10px;
-  color: rgba(0, 0, 0, 0.578);
+  color: rgba(0, 0, 0, 0.678);
   background-color: rgba(235, 235, 235, 0.9);
 
   @media screen and (min-width: 960px) {
