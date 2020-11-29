@@ -72,17 +72,15 @@ const SlidesContainer = styled.div`
 const ProductImg = styled(Img)`
   min-width: 38%;
   max-width: 100%;
-  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   margin: 0 auto;
   animation: fade 2s forwards;
   @keyframes fade {
     from {
-      right: -2000px;
+      transform: translateX(-1000px);
       /* transform: scale(0.85); */
     }
     to {
-      right: 0;
-      /* transform: scale(1); */
+      transform: translateX(0); /* transform: scale(1); */
     }
   }
   @media screen and (max-width: 900px) {

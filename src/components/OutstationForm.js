@@ -64,7 +64,7 @@ const OutstationForm = () => {
 
       setTimeout(() => {
         setModal2IsOpen(false)
-      }, 30000)
+      }, 3000)
     })
   }
 
@@ -202,7 +202,7 @@ const OutstationForm = () => {
             },
             content: {
               backgroundColor: "#a7be38",
-              boxShadow: "0 3px 15px black",
+              boxShadow: "rgba(0, 0, 0, 0.15) 0px 2px 8px",
               zIndex: "1000000000000",
               border: "none",
               borderRadius: "20px",
@@ -226,11 +226,13 @@ const OutstationForm = () => {
           </SVGContainer>
           <h1>Booked Succesfully</h1>
           <Button
-            round
-            onClick={closeModal}
             style={{
+              color: "#000",
+              backgroundColor: "#fff",
               margin: "0 auto",
             }}
+            round
+            onClick={closeModal}
           >
             {" "}
             O K
