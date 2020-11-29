@@ -64,7 +64,7 @@ const OutstationForm = () => {
 
       setTimeout(() => {
         setModal2IsOpen(false)
-      }, 3000)
+      }, 30000)
     })
   }
 
@@ -197,11 +197,11 @@ const OutstationForm = () => {
           style={{
             overlay: {
               backgroundColor: "#fff",
-              backdropFilter: "blur(40px)",
+              backdropFilter: "blur(8px)",
               zIndex: "100000000000000",
             },
             content: {
-              backgroundColor: "#151719",
+              backgroundColor: "#a7be38",
               boxShadow: "0 3px 15px black",
               zIndex: "1000000000000",
               border: "none",
@@ -226,7 +226,6 @@ const OutstationForm = () => {
           </SVGContainer>
           <h1>Booked Succesfully</h1>
           <Button
-            primary
             round
             onClick={closeModal}
             style={{
@@ -406,8 +405,8 @@ const FormInputBtn = styled.button`
     cursor: pointer;
     transition: all 0.4s ease-out;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.9);
-    color: #89a006;
+    background: #a2a1a1;
+    color: #fff;
     font-weight: bold;
   }
 

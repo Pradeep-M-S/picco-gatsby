@@ -68,16 +68,21 @@ const ProductsContainer = styled.div`
   color: #fff;
 `
 const ProductsHeading = styled.h1`
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   text-align: center;
-  margin: 5rem 0;
+  line-height: 33.6px;
+  margin: 2rem 0;
+  margin-top: 3rem;
   color: #000;
+  letter-spacing: 1px;
+  font-weight: 700;
 `
 const ProductWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  padding: 0 1rem;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  gap: -100px;
+  /* padding: 0 1rem; */
   margin-bottom: 100px;
   justify-items: center;
 
@@ -88,12 +93,11 @@ const ProductWrapper = styled.div`
 `
 const ProductCard = styled.div`
   line-height: 2;
-  width: 90%;
+  width: 60%;
   height: 100%;
   position: relative;
   border-radius: 10px;
   transition: 0.2s ease;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
 `
 const ProductImg = styled(Img)`
   height: 100%;
@@ -108,6 +112,7 @@ const ProductInfo = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 0 2rem;
+  width: 125%;
 
   @media screen and (max-width: 280px) {
     padding: 0 1rem;
@@ -124,14 +129,13 @@ const TextWrap = styled.div`
 `
 
 const ProductTitle = styled.h2`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
   margin-left: 0.5rem;
-  border-bottom: 2px solid black;
-  margin-left: -10px;
+  font-weight: 500;
+  margin-left: -30px;
   @media screen and (max-width: 868px) {
-    margin-left: -25px;
   }
 `
 const OfferDescription = styled.p`
@@ -139,7 +143,7 @@ const OfferDescription = styled.p`
   font-weight: 400;
   margin-left: -10px;
   padding-top: 10px;
+  margin-left: -30px;
   @media screen and (max-width: 868px) {
-    margin-left: -25px;
   }
 `

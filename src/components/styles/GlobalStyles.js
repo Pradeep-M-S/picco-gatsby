@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
 * {    
-    font-family:"Josefin Sans",sans-serif;
+    font-family:"Roboto",sans-serif;
     padding:0;
     margin:0;
     box-sizing:border-box;
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
   body {
-    font-family: "Josefin Sans ",sans-serif;
+    font-family: "Roboto",sans-serif;
   }
 }
 `

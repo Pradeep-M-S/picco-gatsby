@@ -60,7 +60,7 @@ const Header2 = () => {
 export default Header2
 
 const NavContainer = styled.div`
-  font-family: "Josephin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100px;
   border-radius: 0 0 50px 50px;
   justify-content: space-between;
@@ -73,9 +73,9 @@ const NavContainer = styled.div`
   right: 0;
   left: 0;
   background: red;
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
   color: #000;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -124,13 +124,20 @@ const BarsContainer = styled.div`
 
 const LogoContainer = styled.div`
   display: block;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 130px;
+  height: 130px;
+  margin-left: -10px;
   cursor: pointer;
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 120px;
+    height: 120px;
+    margin-left: 18px;
+    margin-top: 2px;
   }
 `
 const NavMenu = styled.div`

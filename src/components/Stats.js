@@ -3,16 +3,15 @@ import Fade from "react-reveal/Fade"
 
 import styled from "styled-components"
 import { FaRupeeSign } from "react-icons/fa"
-import { FcOnlineSupport } from "react-icons/fc"
 import { GiThreeFriends } from "react-icons/gi"
-import { BiTaxi } from "react-icons/bi"
+import { BiTaxi, BiSupport } from "react-icons/bi"
 
 const StatsData = [
   {
     icon: (
       <FaRupeeSign
         css={`
-          color: #047bf1;
+          color: #000;
         `}
       />
     ),
@@ -22,9 +21,9 @@ const StatsData = [
   },
   {
     icon: (
-      <FcOnlineSupport
+      <BiSupport
         css={`
-          color: #f3a82e;
+          color: #000;
         `}
       />
     ),
@@ -36,7 +35,7 @@ const StatsData = [
     icon: (
       <GiThreeFriends
         css={`
-          color: #f34f2e;
+          color: #000;
         `}
       />
     ),
@@ -48,7 +47,7 @@ const StatsData = [
     icon: (
       <BiTaxi
         css={`
-          color: #3af576;
+          color: #000;
         `}
       />
     ),
@@ -92,15 +91,17 @@ const StatsContainer = styled.div`
   padding: 4rem calc((100vw - 1300px) / 2);
 `
 const Heading = styled.h1`
-  text-align: start;
-  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   margin-bottom: 3rem;
+  letter-spacing: 2px;
   padding: 0 2rem;
+  color: #a7be38;
 `
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 40px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -111,15 +112,18 @@ const Wrapper = styled.div`
 `
 const StatsBox = styled.div`
   height: 100%;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding: 2rem;
+  background: #eee;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 `
 const Icon = styled.div`
   font-size: 3rem;
   margin-bottom: 2rem;
 `
 const Title = styled.p`
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
   font-weight: bold;
   margin-bottom: 0.5rem;
 `

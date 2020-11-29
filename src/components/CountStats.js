@@ -14,7 +14,7 @@ const CountStats = () => {
       </Fade>
       <Description>Our record and achievements since 2015</Description>
       <Fade>
-        <IconContext.Provider value={{ color: "#000", size: "3em" }}>
+        <IconContext.Provider value={{ color: "#a7be38", size: "3em" }}>
           <AllCountContainer>
             <IndividualCounter>
               <FaTaxi />
@@ -82,18 +82,20 @@ export default CountStats
 const CountStatsContainer = styled.div`
   padding: 2rem;
   display: grid;
-  grid-template-rows: 100px 80px 1fr;
+  grid-template-rows: 0.4fr 1fr 2.8fr;
   text-align: center;
-  min-height: 50vh;
+  min-height: 80vh;
+  height: 100vh;
 `
 
 const Heading = styled.h1`
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 2.8rem);
   margin: 1rem 0;
-  color: #000;
+  letter-spacing: 2px;
+  color: #a7be38;
 `
 const Description = styled.h2`
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1rem, 3vw, 1.4rem);
   color: #000;
 `
 const AllCountContainer = styled.div`

@@ -36,7 +36,7 @@ class Layout extends Component {
 
   render() {
     const progressBarStyle = {
-      height: "3px",
+      height: "5.5px",
       background: "#7C9F22",
       width: this.state.scrolled,
       zIndex: 10045454510032240000000000001,

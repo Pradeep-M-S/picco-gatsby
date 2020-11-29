@@ -18,11 +18,11 @@ const IndexPage = () => (
     <Blah />
     <WhatsappIcon />
     <Hero1 />
-    <Offers heading="Great offers for you" id="offers" className="offers" />
+    <Offers heading="Great Offers For You" id="offers" className="offers" />
     <Fleet heading="Picco's Fleet" />
+    <Stats />
     <CountStats />
     <Testimonials />
-    <Stats />
     <Trips id="trips" heading="Popular Destinations" /> <Footer />
   </Layout>
 )

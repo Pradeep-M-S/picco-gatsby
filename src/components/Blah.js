@@ -77,12 +77,12 @@ const ProductImg = styled(Img)`
   animation: fade 2s forwards;
   @keyframes fade {
     from {
-      opacity: 0;
-      transform: scale(0.85);
+      right: -2000px;
+      /* transform: scale(0.85); */
     }
     to {
-      opacity: 1;
-      transform: scale(1);
+      right: 0;
+      /* transform: scale(1); */
     }
   }
   @media screen and (max-width: 900px) {

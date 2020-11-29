@@ -22,7 +22,7 @@ export default WhatsappIcon
 
 const IconContainer = styled.div`
   color: white;
-  background: #7c9c1d;
+  background: #a7be38;
   border-radius: 50%;
   padding: 15px;
   /* font-size: 5rem; */
