@@ -84,8 +84,8 @@ const CountStatsContainer = styled.div`
   display: grid;
   grid-template-rows: 0.4fr 1fr 2.8fr;
   text-align: center;
+  height: 100%;
   min-height: 80vh;
-  height: 100vh;
 `
 
 const Heading = styled.h1`

@@ -48,7 +48,6 @@ const SlideShow = () => {
     <>
       <SlidesContainer>
         <ProductImg
-          style={{ width: "30%", height: "30" }}
           fluid={images[index].node.childImageSharp.fluid}
           alt={images[index].node.base.split(".")[0]}
           fadeIn="true"
@@ -64,28 +63,21 @@ export default SlideShow
 const SlidesContainer = styled.div`
   margin-top: 100px;
   background: #a7be38;
-
-  @media screen and (min-width: 768px) {
-    height: 300px;
-  }
+  height:100%;
 `
 const ProductImg = styled(Img)`
-  min-width: 38%;
+  width:50.5%;
   max-width: 100%;
   margin: 0 auto;
   animation: fade 2s forwards ease;
   @keyframes fade {
     from {
-      transform: scale(0.85) translateX(-1000px);
+      transform: translateX(-1000px);
     }
     to {
-      transform: scale(1) translateX(0);
+      transform: translateX(0);
     }
   }
-  @media screen and (max-width: 900px) {
-    min-width: 62%;
-  }
-
   @media screen and (max-width: 768px) {
     min-height: 100%;
     min-width: 100%;

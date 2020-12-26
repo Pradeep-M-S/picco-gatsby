@@ -164,7 +164,7 @@ const NavMobileMenu = styled.div`
   align-items: center;
   height: 200px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.985);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
   transition: all 0.5s ease;
