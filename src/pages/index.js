@@ -23,7 +23,6 @@ const IndexPage = () => (
     <Stats />
     <CountStats />
     <Testimonials />
-    <Trips id="trips" heading="Popular Destinations" /> <Footer />
   </Layout>
 )
 

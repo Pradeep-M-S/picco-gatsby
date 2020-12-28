@@ -36,15 +36,13 @@ const Hero1 = () => {
 export default Hero1
 
 const Hero1Container = styled.div`
-  min-height: 60vh;
-  height: 80vh;
+;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #f6f6f6;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
-    height: 100%;
     gap: 100px;
   }
 `

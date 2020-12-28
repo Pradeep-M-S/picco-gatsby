@@ -1,56 +1,32 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-
 import styled from "styled-components"
-import { FaRupeeSign } from "react-icons/fa"
-import { GiThreeFriends } from "react-icons/gi"
-import { BiTaxi, BiSupport } from "react-icons/bi"
+import logo1 from "../assets/images/why-1.png"
+import logo2 from "../assets/images/why-2.png"
+import logo3 from "../assets/images/why-3.png"
+import logo4 from "../assets/images/why-4.png"
 
 const StatsData = [
   {
-    icon: (
-      <FaRupeeSign
-        css={`
-          color: #000;
-        `}
-      />
-    ),
+    icon: logo1,
     title: "Best Price",
     desc:
       " We reward you with lower rates the longer you rent a car from us and at best price.",
   },
   {
-    icon: (
-      <BiSupport
-        css={`
-          color: #000;
-        `}
-      />
-    ),
+    icon: logo2,
     title: "24*7 Support",
     desc:
       " An immediate free transfer service to your residence and replacement car is available.",
   },
   {
-    icon: (
-      <GiThreeFriends
-        css={`
-          color: #000;
-        `}
-      />
-    ),
+    icon: logo3,
     title: "Friendly Drivers",
     desc:
       "Our friendly and knowledgeable drivers will take care of you with the complete journey.",
   },
   {
-    icon: (
-      <BiTaxi
-        css={`
-          color: #000;
-        `}
-      />
-    ),
+    icon: logo4,
     title: "Premium Cabs",
     desc: "All our cars and brand new and regularly audited cars.",
   },
@@ -67,7 +43,12 @@ const Stats = () => {
           {StatsData.map((item, index) => {
             return (
               <StatsBox key={index}>
-                <Icon>{item.icon}</Icon>
+                <img
+                  style={{
+                    width: "65px",
+                    height: "65px",
+                  }}
+                  src={item.icon} />
                 <Title>{item.title}</Title>
                 <Description>{item.desc}</Description>
               </StatsBox>
@@ -101,7 +82,7 @@ const Heading = styled.h1`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  grid-gap: 20px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -111,7 +92,7 @@ const Wrapper = styled.div`
   }
 `
 const StatsBox = styled.div`
-  height: 100%;
+  height: 120%;
   width: 80%;
   margin: 0 auto;
   padding: 2rem;
@@ -120,18 +101,17 @@ const StatsBox = styled.div`
   transition: all 0.5s ease;
   cursor: pointer;
   &:hover {
-    transform: scale(1.09) translateY(-4px);
+    transform: scale(1.09) translateY(-10px);
     transition: all 0.5s ease;
     background: #a7be38;
   }
 `
-const Icon = styled.div`
-  font-size: 3rem;
-  margin-bottom: 2rem;
-`
+
 const Title = styled.p`
   font-size: clamp(1rem, 3.5vw, 1.5rem);
   font-weight: bold;
   margin-bottom: 0.5rem;
+  margin:10px;
 `
-const Description = styled.p``
+const Description = styled.p`  margin:10px;
+`

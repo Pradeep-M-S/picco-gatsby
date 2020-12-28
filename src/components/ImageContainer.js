@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import CarGif from "../assets/images/cargif.webp"
-
+import CarGif from "../assets/images/cargif.gif"
 import { SocialIconLink } from "./Footer.elements"
 import { FaFacebook, FaInstagram, FaGoogle } from "react-icons/fa"
 import { FiMail } from "react-icons/fi"
@@ -55,49 +54,18 @@ const ImageContainer = () => {
 export default ImageContainer
 
 const ImageWrapper = styled.div`
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 50px;
-  justify-content: center;
-  @media screen and (max-width: 768px) {
-    margin-top: 0;
-    margin-bottom: 0;
-    grid-template-rows: 120px 20px;
-  }
+  margin:0 auto;
 `
 
 const GifWrapper = styled.div`
-  margin-bottom: 80px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 100px;
-  @media screen and (max-width: 768px) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+  margin:0 auto;
 `
 
 const Image = styled.img`
-  transform: scale(0.8);
-  width: 100%;
-  top: 0;
-  margin-bottom: 40px;
-  @media screen and (max-width: 768px) {
-    margin-top: -150px;
-    margin-bottom: 0;
-  }
 `
 const SocialIcons = styled.div`
-  width: 50%;
-  justify-self: center;
-  display: grid;
-  margin: 0 auto;
-  margin-top: -200px;
-  place-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  @media screen and (max-width: 768px) {
-    width: 70%;
-    margin-top: -10px;
-  }
+margin:15px;
+display:flex;
+justify-content:center;
+gap:20px;
 `

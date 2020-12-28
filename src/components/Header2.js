@@ -67,7 +67,7 @@ const NavContainer = styled.div`
   display: flex;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100454545100000000000000;
-
+  max-width:100vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -145,7 +145,7 @@ const NavMenu = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-right: -50px;
-
+ max-width:100%;
   @media screen and (max-width: 768px) {
     display: none;
   }
