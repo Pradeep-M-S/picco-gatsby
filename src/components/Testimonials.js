@@ -43,7 +43,7 @@ const Testimonials = () => {
         What our
         <span> Clients</span> Say ?
       </TestimonialsHeading>
-      <TestimonialsWrapper>
+      {/* <TestimonialsWrapper>
         <Testimonial
           bcol="#fff"
           content="Good approach... Nice Customer interaction... Worth to call again, I am really happy to had the best cab."
@@ -61,7 +61,7 @@ const Testimonials = () => {
           man="Jithin"
           content="Well behaved. Good driving, Friendly. This is my first ride with piccocabs and is better than expected."
         />
-      </TestimonialsWrapper>
+      </TestimonialsWrapper> */}
     </TestimonialsContainer>
   )
 }

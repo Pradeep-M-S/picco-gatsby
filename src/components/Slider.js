@@ -140,7 +140,7 @@ function Slider() {
                                 <Img fluid={images[2].node.childImageSharp.fluid}
                                     alt={images[2].node.base.split(".")[0]}
                                     fadeIn="true" className="testimonial__photo" />
-                                <h6 className="testimonial__name">- Anjana</h6>
+                                <h6 className="testimonial__name">- Bala</h6>
                             </address>
                         </div>
                     </div></div>

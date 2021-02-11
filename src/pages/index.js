@@ -23,7 +23,6 @@ const IndexPage = () => (
     <Fleet heading="Picco's Fleet" />
     <Stats />
     <CountStats />
-    <Testimonials />
     <Slider />
   </Layout>
 )
