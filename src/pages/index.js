@@ -11,6 +11,7 @@ import Fleet from "../components/Fleet"
 import Blah from "../components/Blah"
 import Hero1 from "../components/Hero1"
 import WhatsappIcon from "../components/WhatsappIcon"
+import Slider from "../components/Slider"
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +24,7 @@ const IndexPage = () => (
     <Stats />
     <CountStats />
     <Testimonials />
+    <Slider />
   </Layout>
 )
 
